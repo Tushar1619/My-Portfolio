@@ -24,7 +24,8 @@ import {
   tripguide,
   threejs,
 } from "../assets";
-
+import pepcoding from '../assets/company/pepcoding.png'
+import limpias from '../assets/company/limpias.jpg'
 export const navLinks = [
   {
     id: "about",
@@ -38,31 +39,27 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id: "project",
+    title: "Project",
+  }
 ];
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
-  },
-  {
-    title: "React Native Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+  }
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
+    name: "MongoDB",
+    icon: mongodb,
   },
   {
     name: "CSS 3",
@@ -72,18 +69,12 @@ const technologies = [
     name: "JavaScript",
     icon: javascript,
   },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
+ 
   {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -93,8 +84,9 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "HTML 5",
+    icon: html,
+   
   },
   {
     name: "Three JS",
@@ -104,69 +96,32 @@ const technologies = [
     name: "git",
     icon: git,
   },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  
+ 
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Software Developer Intern",
+    company_name: "Pepcoding",
+    icon: pepcoding,
     iconBg: "#383E56",
     date: "March 2020 - April 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Web development, automation, web scraping, database, OOP, datastructures and algorithms, ReactJS have all been covered in the training.Developed 4 easy-to-use web applications, used ReactJS to develop a scalable web application; reduced load time by 50%."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Software Developer Intern",
+    company_name: "Limpias",
+    icon: limpias,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed the corporate website, linked the database with the user information section. Increased the code efficiency by 20%. Tech Stack: HTML, CSS, Bootstrap, JavaScript, MongoDB",
     ],
   },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+ 
 ];
 
 const testimonials = [
@@ -198,9 +153,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "NotesPanda",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An app that provides user the ability to write notes and save it on the cloud.",
     tags: [
       {
         name: "react",
@@ -211,45 +166,49 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "RESTful API",
         color: "pink-text-gradient",
+      },
+      {
+        name: "Express",
+        color: "blue-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Tushar1619/NotesPandaBackend",
   },
   {
-    name: "Job IT",
+    name: "Code Editor",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+     "A front-end development environment made for developers to write and test the code. Supports HTML, CSS and JavaScript with a live preview. A time out of 1000 ms is set to prevent frequent updating of the DOM.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "CodeMirror2",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "css",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Tushar1619/CodeEditor",
   },
   {
-    name: "Trip Guide",
+    name: "News Panda",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A news website, giving real time news in less than 100 words. Dark and Light mode for better user experience. 15% faster than other news websites.Fully responsive works on all screen sizes.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "News Api",
         color: "green-text-gradient",
       },
       {
@@ -258,7 +217,7 @@ const projects = [
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/Tushar1619/News-Panda",
   },
 ];
 
